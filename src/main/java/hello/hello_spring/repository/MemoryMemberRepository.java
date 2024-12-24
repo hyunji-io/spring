@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 
 import hello.hello_spring.domain.Member;
 
-@Repository
 public class MemoryMemberRepository implements MemberRepository {
 	private Map<Long, Member> store = new HashMap<>();
 	private static long sequence = 0L;
